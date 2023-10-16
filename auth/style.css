@@ -65,7 +65,7 @@ body {
     white-space: nowrap;
 }
 
-.low-fi-block-header .p {
+.low-fi-block-header .p-register {
     position: relative;
     width: fit-content;
     font-weight: 400;
@@ -73,6 +73,16 @@ body {
     font-size: 14px;
     letter-spacing: 0;
     line-height: normal;
+}
+
+.p-login {
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1cm;
 }
 
 .form-group {
@@ -154,16 +164,16 @@ body {
     outline: none;
 }
 
-.have-account-link {
+.have-account-link, .dont-have-account-link {
     font-weight: 500;
     display: block;
     font-size: 12px;
     color: #000000;
     text-decoration: none;
     margin-top: 10px;
-    margin-left: 285px;
+    margin-left: 280px;
 }
 
-.have-account-link:hover {
+.have-account-link:hover, .dont-have-account-link:hover {
     color: #ff8533;
 }
