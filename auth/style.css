@@ -31,6 +31,9 @@ body {
 }
 
 .low-fi-block-header {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.6s;
     width: 600px;
     height: 109px;
     justify-content: center;
@@ -196,5 +199,16 @@ body {
 
 .colored-toast .swal2-html-container {
     color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
