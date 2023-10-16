@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <style>
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .button-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content container-fluid custom-padding">
+            <div class="row mb-5">
+                <div class="col">
+                    <button class="btn btn-light fw-bold fs-5"><img src="assets/img/arrow.png" class="img-fluid me-4">Payment</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Pilih Langganan anda</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>Langganan 1 Bulan</div>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div>Rp. 15.000,-</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>Langganan 3 Bulan</div>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div>Rp. 45.000,-</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>Langganan 6 Bulan</div>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div>Rp. 60.000,-</div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="bg-orange text-start text-white fs-5 rounded p-2 mb-3 w-100">
+                        Payment Method
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-light w-100 fw-bold fs-5 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#paymentBank" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="assets/img/transfer1.png">
+                        Transfer Bank / Cicil
+                    </button>
+                    <div class="collapse mt-2" id="paymentBank">
+                        <div class="card card-body bg-img-pill">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/bank-mandiri.png">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/bank-bca.png">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/bank-bri.png">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/bank-kredivo.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-light w-100 fw-bold fs-5 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#paymentEwallet" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="assets/img/wallet1.png">
+                        E-Wallet
+                    </button>
+                    <div class="collapse mt-2" id="paymentEwallet">
+                        <div class="card card-body bg-img-pill">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/wallet-dana.png">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/wallet-gopay.png">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-pill my-3 rounded py-3">
+                                        <img src="assets/img/wallet-shopeepay.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="bg-orange text-start text-white fs-5 rounded p-2 mb-3 w-100">
+                        Total Payment
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="text-start fs-5 rounded w-100">
+                        Langganan 3 Bulan
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="text-start fs-5 rounded w-100">
+                        Rp 45.000.0,-
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container container-fluid custom-padding">
+            <div class="row">
+                <div class="col">
+                    <button class="bg-orange btn-bayar text-center text-white fs-5 rounded p-2 mb-3 w-100" data-bs-toggle="modal" data-bs-target="#modalSuccess">
+                        Bayar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pembayaran Berhasil -->
+        <div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog mt-4">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/img/success.png">
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h2>Pembayaran Berhasil</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <div class="bg-orange text-center text-white fs-5 rounded p-2 mb-3 w-100">
+                                    Total Payment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <p class="fs-5">Langganan 3 Bulan</p>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <p class="fs-5">Rp. 45.000,-</p>
+                            </div>
+                        </div>
+                        <div class="row text-center my-3">
+                            <div class="col-auto mx-auto">
+                                <a class="button-orange btn-bayar text-center text-white mb-3 w-100 text-decoration-none" href="index.html">
+                                    KEMBALI KE HALAMAN UTAMA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pembayaran Berhasil -->
+        <div class="modal fade" id="modalFailed" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog mt-4">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/img/failed.png">
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col">
+                                <h2>Pembayaran Gagal</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <div class="bg-orange text-center text-white fs-5 rounded p-2 mb-3 w-100">
+                                    Total Payment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <p class="fs-5">Langganan 3 Bulan</p>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <p class="fs-5">Rp. 45.000,-</p>
+                            </div>
+                        </div>
+                        <div class="row text-center my-3">
+                            <div class="col-auto mx-auto">
+                                <a class="button-orange btn-bayar text-center text-white mb-3 w-100 text-decoration-none" href="index.html">
+                                    KEMBALI KE HALAMAN UTAMA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

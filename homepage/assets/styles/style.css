@@ -1,0 +1,156 @@
+.logo {
+    max-width: 100px;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: #FFA458 !important;
+}
+
+.button-orange {
+    background-color: #FFA458;
+    border-radius: 50px;
+    padding: 2px 20px;
+    min-width: 100px;
+    border: 0;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.bg-orange {
+    background-color: #FFA458;
+    border: none;
+}
+
+.button-orange:hover {
+    background-color: #ef7919;
+}
+
+.button-white {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 2px 20px;
+    min-width: 100px;
+    border: 0;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navigation {
+    color: #000000;
+    font-weight: bold;
+}
+
+.active {
+    color: #FFA458 !important;
+}
+
+.image-center {
+    width: 70%;
+}
+
+.bg-navbar {
+    background-color: #F9FBFD;
+    border-bottom: 1px solid #D1D9E2;
+}
+
+.left-section {
+    padding-right: 100px;
+}
+
+.img-fullscreen {
+    height: auto;
+}
+
+.img-ficon {
+    height: 70px;
+}
+
+.bg-img-pill {
+    background-color: #DFDFDF;
+}
+
+.img-pill {
+    background-color: white;
+}
+
+.img-pill:hover {
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+.img-pill > img {
+    height: 30px;
+}
+
+.bottom-section {
+    background-image: url('../img/bg-bottom.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-bayar:hover {
+    background-color: #ef7919;
+}
+
+.footer {
+    background-color: #FFA458;
+}
+
+.content {
+    flex: 1;
+}
+
+.custom-padding {
+    padding: 50px;
+}
+/* Styles for mobile devices */
+@media(max-width: 990px) {
+
+    /* Add your mobile-specific styles here */
+    .button-orange {
+        margin: 5px 10px;
+        width: 90%;
+    }
+
+    .button-white {
+        margin: 5px 10px;
+        width: 90%;
+    }
+
+    .image-center {
+        width: 100%;
+    }
+
+    .left-section {
+        padding-right: 0;
+    }
+
+    ;
+
+    .bg-custom-secondary {
+        background-color: #D9D9D9 !important;
+        width: 100%;
+    }
+
+    .img-fullscreen {
+        display: none;
+    }
+
+    ;
+
+    .img-ficon {
+        height: 40px;
+    }
+    
+    .custom-padding {
+        padding: 10px;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    ;
+    /* Add more styles as needed */
+}
