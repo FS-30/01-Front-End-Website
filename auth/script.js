@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirmPassword");
     const registerButton = document.querySelector(".submit-button");
+    const loginButton = document.querySelector(".login-button");
 
     const Toast = Swal.mixin({
         toast: true,
@@ -20,7 +21,25 @@ document.addEventListener("DOMContentLoaded", function () {
         timerProgressBar: true
     });
 
-    registerButton.addEventListener("click", function () {
+    const mockApiUrl = "https://652d7923f9afa8ef4b277f1f.mockapi.io/eduliterate/users";
+
+    async function registerUser(username, email, password) {
+        const response = await fetch(mockApiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, email, password })
+        });
+
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Failed to register user.');
+        }
+    }
+
+    registerButton.addEventListener("click", async function () {
         const username = usernameInput.value;
         const email = emailInput.value;
         const password = passwordInput.value;
@@ -57,11 +76,58 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             return false;
         }
-    
-        Toast.fire({
-            icon: 'success',
-            title: 'Registration Successful'
-        });
+
+        try {
+            await registerUser(username, email, password);
+            saveUserDataToLocalStorage(username, email, password);
+            Toast.fire({
+                icon: 'success',
+                title: 'Registration Successful'
+            });
+
+            setTimeout(function () {
+                window.location.href = 'login.html';
+            }, 1500);
+
+        } catch (error) {
+            console.error('Registration failed:', error.message);
+            Toast.fire({
+                icon: 'error',
+                title: 'Registration failed. Please try again.'
+            });
+        }
+    });
+
+    function saveUserDataToLocalStorage(username, email, password) {
+        const userData = {
+            username,
+            email,
+            password
+        };
+
+        localStorage.setItem('userData', JSON.stringify(userData));
+    }
+
+    loginButton.addEventListener("click", function () {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        const userData = JSON.parse(localStorage.getItem('userData'));
+        if (userData && userData.username === username && userData.password === password) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Login Successful',
+                timer: 1500, 
+                showConfirmButton: false 
+            }).then(() => {
+                window.location.href = 'login.html';
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid Credentials. Please Try Again.'
+            });
+        }
     });
 
     function isValidUsername(username) {

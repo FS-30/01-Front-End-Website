@@ -145,7 +145,7 @@ body {
     outline: none;
 }
 
-.submit-button {
+.submit-button, .login-button {
     width: 73%;
     padding: 12px;
     border: none;
@@ -159,11 +159,11 @@ body {
     margin-top: 20px;
 }
 
-.submit-button:hover {
+.submit-button:hover, .login-button:hover  {
     background-color: #ff8533;
 }
 
-.submit-button:focus {
+.submit-button:focus, .login-button:focus {
     outline: none;
 }
 
