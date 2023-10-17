@@ -18,6 +18,7 @@ body {
     height: 85%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
+    margin: auto;
 }
 
 .element-removebg {
@@ -199,6 +200,61 @@ body {
 
 .colored-toast .swal2-html-container {
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .element-removebg {
+        display: none;
+    }
+
+    .low-fi-block-header {
+        width: 100%;
+        top: 30%;
+        right: 0;
+    }
+
+    .low-fi-block-header .div {
+        align-items: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .low-fi-block-header .text-wrapper {
+        font-size: 18px;
+    }
+
+    .p-login {
+        font-size: 12px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .box .search {
+        width: 100%;
+    }
+
+    .submit-button, .login-button {
+        width: 50%;
+    }
+
+    .have-account-link, .dont-have-account-link {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
 }
 
 @keyframes fadeIn {

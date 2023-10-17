@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const userData = JSON.parse(localStorage.getItem('userData'));
         if (userData && userData.username === username && userData.password === password) {
-            Swal.fire({
+            Toast.fire({
                 icon: 'success',
                 title: 'Login Successful',
                 timer: 1500, 
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = 'login.html';
             });
         } else {
-            Swal.fire({
+            Toast.fire({
                 icon: 'error',
                 title: 'Invalid Credentials. Please Try Again.'
             });
