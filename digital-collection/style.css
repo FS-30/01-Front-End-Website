@@ -222,67 +222,20 @@ a{
 .btn #subs-button img{
 width:25px;
 height: 25px;
-margin: 0px 0px 2px 5px;
+margin: 0px 0px 3px 4px;
 padding: 0px 0px 0px 10px;
 }
+.section-body li a :active ::after #E-Book {
+    background: #FFA458;
+    transition: 0.5s;
+    opacity: 0.5;
+}
 
-
-/* catagaries */
-.catagories{
-    margin: 100px;
-    margin-top: -100px;
-}
-.catagories .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-    gap: 1.5rem;
-}
-.catagories .box-container .box{
-    padding: 2rem 1rem;
-    background-color: #ecf0f1;
-    outline: .1rem solid rgba(0, 0, 0, .1);
-    outline-offset: -1rem;
-    text-align: center;
-    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-.catagories .box-container .box:hover{
-    outline: .1rem solid #000;
-    outline-offset: 0rem;
-}
-.catagories .box-container .box img{
-    margin: 1rem 0;
-    height: 10rem;
-}
-.catagories .box-container .box h3{
-    font-size: 1.5rem;
-    color: #000;
-    line-height: 1.5;
-}
-.catagories .box-container .box p{
-    font-size: 1.5rem;
-    color: #666;
-    line-height:1.5;
-    padding: 1rem 0;
-}
 /* Footer */
-.bottom-section {
-    background-image: url('../img/bg-bottom.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.btn-bayar:hover {
-    background-color: #ef7919;
-}
-
-.footer {
+footer {
     background-color: #FFA458;
+    width: 100%;
 }
-
-.content {
-    flex: 1;
-}
-
-.custom-padding {
-    padding: 50px;
+.text-white{
+    text-align: justify;
 }
