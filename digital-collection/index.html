@@ -1,201 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
-        <link rel="stylesheet" href="globals.css" />
-        <link rel="stylesheet" href="styleguide.css" />
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eduliterate</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
     </head>
 
     <body>
-        <div class="digital-collection">
-            <div class="div">
-                <div class="vertical-container">
-                    <img class="eduliterate-website"
-                        src="https://c.animaapp.com/c7ZxkFrB/img/eduliterate-website-favicon-color-1@2x.png" />
-                    <div class="text-wrapper-21">EDULITERATE</div>
-                </div>
-                <div class="text-wrapper-22">COLLECTION</div>
-                <div class="overlap-10">
-                    <div class="text-8"></div>
-                    <div class="text-wrapper-23">Category</div>
-                </div>
-                <div class="overlap-group-2">
-                    <div class="text-container">
-                        <div class="div-wrapper">
-                            <div class="text-wrapper-24">
-                                <input type="checkbox" id="e-book-checkbox" name="e-book-checkbox" value="E-book">
-                                <label for="category-1">E-BOOK</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-container-2">
-                    <div class="text-9">
-                        <div class="text-wrapper-25">
-                            <input type="checkbox" id="artikel-checkbox" name="artikel-checkbox" value="Artikel">
-                            <label for="category-2">ARTIKEL</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-container-3">
-                    <div class="text-10">
-                        <div class="text-wrapper-26">
-                            <input type="checkbox" id="jurnal-checkbox" name="jurnal-checkbox" value="Jurnal">
-                            <label for="category-3">JURNAL</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-container-4">
-                    <div class="text-11">
-                        <div class="text-wrapper-27">
-                            <input type="checkbox" id="e-book-checkbox" name="e-book-checkbox" value="E-book">
-                            <label for="category-1">E-BOOK</label>
-                        </div>
-                    </div>
-                </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar px-4">
+            <img src="./assets/img/logo.png" class="logo me-2">
+            <a class="logo-text navbar-brand" href="#">EDULITERATE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation active" href="#">Digital Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation" href="#">Feedback</a>
+                    </li>
+                </ul>
+                <!-- Move the buttons to the right -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="button-white" href="#">Register</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="button-orange" href="#">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Category-->
+        <section class="section-body">
+            <ul>
+                <h4>
+                    <span>Category</span>
+                </h4>
+                <li><a href="#E-book">E-Book</a></li>
+                <li><a href="#Audio Book">Audio Book</a></li>
+                <li><a href="#Jurnal">Jurnal</a></li>
+                <li><a href="#Artikel">Artikel</a></li>
+            </ul>
+        </section>
+        <!--Product-->
 
-                <div class="overlap">
-                    <img class="image" src="https://c.animaapp.com/c7ZxkFrB/img/image-6-2@2x.png" />
-                    <img class="rectangle" src="https://c.animaapp.com/c7ZxkFrB/img/rectangle-34624138-2.svg" />
-                    <div class="text"></div>
-                    <p class="text-wrapper">Suharto : Sebuah Biografi Politik</p>
-                    <div class="text-2"></div>
-                    <p class="p">Suharto : Sebuah Biografi Politik</p>
-                    <img class="line" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    <img class="team" src="https://c.animaapp.com/c7ZxkFrB/img/team-5.svg" />
-                    <img class="calendar" src="https://c.animaapp.com/c7ZxkFrB/img/calendar-5.svg" />
-                    <div class="text-wrapper-2">Robert Edward Elsa Elson</div>
-                    <div class="text-wrapper-3">E-book</div>
-                    <div class="text-wrapper-4">2000</div>
-                    <img class="read" src="https://c.animaapp.com/c7ZxkFrB/img/read-5.svg" />
-                    <img class="lock" src="https://c.animaapp.com/c7ZxkFrB/img/lock-1.svg" />
-                    <div class="text-wrapper-5">Subscribe</div>
-                </div>
-                <div class="overlap-group">
-                    <img class="img" src="https://c.animaapp.com/c7ZxkFrB/img/image-7@2x.png" />
-                    <img class="rectangle" src="https://c.animaapp.com/c7ZxkFrB/img/rectangle-34624138-2.svg" />
-                    <div class="text-3"></div>
-                    <div class="text-4"></div>
-                    <div class="text-wrapper-7">Manajemen Teritorial</div>
-                    <img class="line-2" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    <img class="team-2" src="https://c.animaapp.com/c7ZxkFrB/img/team-4.svg" />
-                    <img class="calendar-2" src="https://c.animaapp.com/c7ZxkFrB/img/calendar-4.svg" />
-                    <p class="text-wrapper-8">Dwi Joko Siswanto &amp; Tegor</p>
-                    <div class="text-wrapper-9">E-book</div>
-                    <div class="text-wrapper-10">2021</div>
-                    <img class="read-2" src="https://c.animaapp.com/c7ZxkFrB/img/read-4.svg" />
-                    <div class="text-wrapper-11">Download</div>
-                </div>
-                <div class="overlap-2">
-                    <div class="overlap-3">
-                        <div class="text-5"></div>
-                        <img class="lock-2" src="https://c.animaapp.com/c7ZxkFrB/img/lock-1.svg" />
-                        <div class="text-wrapper-12">Subscribe</div>
-                        <img class="line-3" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    </div>
-                    <img class="image-2" src="https://c.animaapp.com/c7ZxkFrB/img/image-8@2x.png" />
-                    <div class="overlap-4">
-                        <div class="text-6"></div>
-                        <div class="text-wrapper-13">Hayatan Gamelan</div>
-                    </div>
-                    <img class="team-3" src="https://c.animaapp.com/c7ZxkFrB/img/team-3.svg" />
-                    <img class="calendar-3" src="https://c.animaapp.com/c7ZxkFrB/img/calendar-3.svg" />
-                    <div class="text-wrapper-8">Sumarsam</div>
-                    <div class="text-wrapper-14">E-book</div>
-                    <div class="text-wrapper-15">2020</div>
-                    <img class="read-3" src="https://c.animaapp.com/c7ZxkFrB/img/read-3.svg" />
-                </div>
-                <div class="overlap-5">
-                    <img class="img" src="https://c.animaapp.com/c7ZxkFrB/img/image-9@2x.png" />
-                    <div class="overlap-6">
-                        <div class="text-6"></div>
-                        <div class="text-wrapper-13">Marmut Merah Jambu</div>
-                    </div>
-                    <div class="overlap-7">
-                        <div class="overlap-8">
-                            <img class="calendar-4" src="https://c.animaapp.com/c7ZxkFrB/img/calendar-2.svg" />
-                            <div class="text-wrapper-17">E-book</div>
-                            <img class="read-4" src="https://c.animaapp.com/c7ZxkFrB/img/read-2.svg" />
+        <section class="product" id="product">
+            <h1 class="heading">Digital<span>Collection</span></h1>
+            <div class="product-slider">
+                <div class="wrapper">
+                    <div class="box">
+                        <img src="./assets/img/book-daya-tarik-kampung-baduy.jpg" alt="">
+                        <h3>Daya Tarik Kampung Baduy</h3>
+                        <div class="price">by Robby Binarwan</div>
+                        <div class="description">
+                            <span>Buku ini menceritakan Sebuah Kampung bernama Kampung Baduy. Kampung Baduy
+                                merupakan daerah tujuan wisata yang mempunyai daya tarik
+                                selain alam juga budayanya. Mereka menjaga erat nilai dan norma serta adat istiadat
+                                masyarakatnya yang masih terisolir dengan sengaja mengasingkan diri, hidup mandiri tidak
+                                mengharapkan bantuan dari orang luar.
+                                wisatawan dan mempunyai nilai jual.</span>
                         </div>
-                        <div class="text-wrapper-18">2010</div>
+                        <div class=""></div>
+                        <a href="#" class="btn">Download</a>
                     </div>
-                    <div class="overlap-9">
-                        <div class="text-7"></div>
-                        <div class="text-wrapper-19">Download</div>
-                    </div>
-                    <img class="line-2" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    <img class="team-4" src="https://c.animaapp.com/c7ZxkFrB/img/team-2.svg" />
-                    <div class="text-wrapper-20">Raditya Dika</div>
-                </div>
-                <div class="search-box">
-                    <div class="wrapper">
-                        <div class="placeholder-wrapper">
-                            <div class="placeholder">input search text</div>
+                    <div class="box">
+                        <img src="./assets/img/book-c++.jpg" alt="">
+                        <h3>C++ Programming</h3>
+                        <div class="price">by D.S. Malik</div>
+                        <div class="description">
+                            <span> Buku ini ditulis khusus untuk pelajar dan bukan untuk profesional TI, buku ini
+                                menawarkan cakupan komprehensif topik pengantar pemrograman C dan kemudian menggerakkan
+                                siswa dengan percaya diri ke dalam konsep yang
+                                lebih maju. Menampilkan pemecahan masalah di seluruh teks, contoh-contohnya relevan
+                                dengan C dan memberikan contoh-contoh pemrograman umum yang mendasar. </span>
                         </div>
+                        <a href="#" class="btn">Download</a>
                     </div>
-                    <div class="input-addon-icon">
-                        <div class="icon-wrapper"></div>
-                    </div>
-                </div>
-                <div class="overlap-11">
-                    <img class="image-3" src="https://c.animaapp.com/c7ZxkFrB/img/image-6-1@2x.png" />
-                    <img class="rectangle" src="https://c.animaapp.com/c7ZxkFrB/img/rectangle-34624138-2.svg" />
-                    <div class="text-12"></div>
-                    <div class="text-wrapper-28">Daya Tarik Kampung Baduy</div>
-                    <div class="text-wrapper-29">Baca</div>
-                    <div class="text-13"></div>
-                    <div class="text-14"></div>
-                    <div class="text-wrapper-30">Download</div>
-                    <div class="text-wrapper-31">Listen</div>
-                    <img class="line" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    <img class="team-5" src="https://c.animaapp.com/c7ZxkFrB/img/team-1.svg" />
-                    <img class="calendar-5" src="https://c.animaapp.com/c7ZxkFrB/img/calendar-1.svg" />
-                    <div class="text-wrapper-32">Robby Binarwan</div>
-                    <div class="text-wrapper-3">E-book/Audio Book</div>
-                    <div class="text-wrapper-4">2019</div>
-                    <img class="read" src="https://c.animaapp.com/c7ZxkFrB/img/read-1.svg" />
-                </div>
-                <div class="overlap-12">
-                    <img class="image-3" src="https://c.animaapp.com/c7ZxkFrB/img/image-6@2x.png" />
-                    <img class="rectangle" src="https://c.animaapp.com/c7ZxkFrB/img/rectangle-34624138-2.svg" />
-                    <div class="text-12"></div>
-                    <div class="text-12"></div>
-                    <div class="text-4"></div>
-                    <div class="text-wrapper-33">C++ Progamming</div>
-                    <div class="text-wrapper-11">Download</div>
-                    <div class="text-wrapper-11">Download</div>
-                    <img class="line-2" src="https://c.animaapp.com/c7ZxkFrB/img/line-5.svg" />
-                    <img class="team-4" src="https://c.animaapp.com/c7ZxkFrB/img/team.svg" />
-                    <img class="calendar-3" src="https://c.animaapp.com/c7ZxkFrB/img/calendar.svg" />
-                    <div class="text-wrapper-34">D.S. Malik</div>
-                    <div class="text-wrapper-14">E-book</div>
-                    <div class="text-wrapper-15">2005</div>
-                    <img class="read-3" src="https://c.animaapp.com/c7ZxkFrB/img/read.svg" />
-                </div>
-                <div class="pagination">
-                    <div class="components"><img class="img-2" src="https://c.animaapp.com/c7ZxkFrB/img/left-1.svg" />
-                    </div>
-                    <div class="components-2">
-                        <div class="text-wrapper-35">1</div>
-                    </div>
-                    <div class="element-wrapper">
-                        <div class="element">2</div>
-                    </div>
-                    <div class="element-wrapper">
-                        <div class="element-2">3</div>
-                    </div>
-                    <div class="element-wrapper">
-                        <div class="element-2">4</div>
-                    </div>
-                    <div class="element-wrapper">
-                        <div class="element-2">5</div>
-                    </div>
-                    <div class="components"><img class="img-2" src="https://c.animaapp.com/c7ZxkFrB/img/right-14.svg" />
+                    <div class="box">
+                        <img src="./assets/img/buku-bodo-amat.png" alt="">
+                        <h3>Sebuah Seni Untuk Bersikap Bodo Amat</h3>
+                        <div class="price">by Mark Ronson</div>
+                        <div class="description">
+                            <span> Buku ini menceritakan kisah Harles Bokowski, seorang pecandu alkohol, penjudi, kasar,
+                                pelit dan tukang utang yang suka berjudi dengan wanita. Ia bercita-cita menjadi seorang
+                                penulis. Karya Bukowski secara selalu ditolak oleh hampir semua majalah, namun ia tidak
+                                menyerah dan terus menulis dan mengarang puisi.</span>
+                        </div>
+                        <a href="#" class="btn">Download</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="product-slider">
+                <div class="wrapper">
+                    <div class="box">
+                        <img src="./assets/img/buku-rumah-lebah.jpg" alt="">
+                        <div class="logo-audiobook">
+                            <img src="./assets/img/headphones-solid.svg" alt="">
+                        </div>
+                        <h3>Rumah Lebah</h3>
+                        <div class="price">by Ruwi Meitasari</div>
+                        <div class="description">
+                            <span> Mala, gadis kecil berusia enam tahun yang terobsesi dengan ensiklopedia. Dia hanya
+                                membaca buku ensiklopedia dan selalu mengurutkan buku satu sampai buku terakhir dari
+                                sisi kiri ke sisi kanan. Dia juga tertarik dengan beruang.
+                                Di rumah, Mala hanya tinggal bersama orangtuanya, tetapi dia selalu membicarakan enam
+                                orang asing yang hidup bersama di dalam rumahnya. Dia selalu takut pada Satira,
+                                bersahabat dekat dengan Wilis, berbicara dengan Tante Ana yang suka berdandan, belajar
+                                bahasa Spanyol dengan Abuela, dan si Kembar yang hanya bisa mendengar, melihat dan
+                                mencatat.</span>
+                        </div>
+                        <a href="#" class="btn">Download</a>
+                        <a href="#" class="btn">Listen</a>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/img/buku-dunia-sophie.jpg" alt="">
+                        <h3>Dunia Sophie</h3>
+                        <div class="price">by Jostein Gaarder</div>
+                        <div class="description">
+                            <span> Sophie merupakan seorang pelajar sekolah menegah yang berusia 14 tahun. Namun suatu
+                                hari setelah pulang sekolah, ia mendapatkan sebuah surat misterius yang hanya berisikan
+                                satu pertanyaan "Siapa Kamu?". Hal ini tentunya membuat Sophie heran, pada hari yang
+                                sama dia juga mendapatkan surat lain yang bertanya"Dari manakah datangnya dunia?". Hal
+                                ini tentunya membuat ia tersentak dari rutinitas hidup sehari-hari, surat itu selalu
+                                membuat Sophie mempertanyakan soal-soal mendasar yang tak pernah dipikirkannya selama
+                                ini.</span>
+                        </div>
+                        <a href="#" class="btn">Subscribe<span id="subs-button"><img src="./assets/img/lock-solid.svg"
+                                    alt=""></span></a>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/img/buku-komet-minor.jpg" alt="">
+                        <h3>Komet Minor</h3>
+                        <div class="price">by Tere Liye</div>
+                        <div class="description">
+                            <span> Sebelum kita mulai, mari kita mebaca basmalah. Bismillah. Selanjutnya buku ini
+                                melanjutan kisah dari buku sebelumnya yaitu Komet, dimana berakhir saat itu berupa
+                                pengkhiatan oleh Max alias Si Tanpa Mahkota yang mengkhianati kebaikan tiga remaja
+                                petarung yang berasal dari klan berbeda: Raib (Klan Bulan), Seli (Klan Matahari, dan Ali
+                                (Klan Bumi).Di detik-detik terakhir di tepi pulau portal Komet Minor, diam-diam Ali
+                                memanggil Batozar lewat cermin yang ia bawa selalu. Batozar pun muncul dan menyelamatkan
+                                Raib dan teman-teman.</span>
+                        </div>
+                        <a href="#" class="btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Product Categories-->
+        <section class="catagories" id="catagories">
+            <h1 class="heading">product<span>catagories</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="image/01.png" alt="">
+                    <h3>Css Book</h3>
+                    <p>upto 80% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <img src="image/02.png" alt="">
+                    <h3>Js Book</h3>
+                    <p>upto 50% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <img src="image/03.png" alt="">
+                    <h3>Html Book</h3>
+                    <p>upto 60% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <img src="image/04.png" alt="">
+                    <h3>IOT</h3>
+                    <p>upto 40% off</p>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid footer pt-5 px-5">
+                <div class="row mb-5">
+                    <div class="col-auto">
+                        <img class="img-fluid" src="assets/img/avatars.png">
+                    </div>
+                    <div class="col-lg-4 mt-2">
+                        <p class="text-white">The Nexcent blog is the best place to read about the latest membership
+                            insights, trends and more. See who's joining the community, read about how our community are
+                            increasing their membership income and lot's more.​</p>
+                    </div>
+                    <div class="col-lg-auto text-white ms-auto me-5">
+                        <div>Social</div>
+                        <div>Twitter</div>
+                        <div>LinkedIn</div>
+                        <div>Facebook</div>
+                        <div>GitHub</div>
+                        <div>AngelList</div>
+                        <div>Dribble</div>
+                    </div>
+                </div>
+                <hr style="background-color: white; height: 3px; border: none;">
+                <div class="row">
+                    <div class="col text-left text-white">
+                        <p>© 2023 Fullstack Development 30. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap JS and jQuery -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+        </footer>
     </body>
 
 </html>
