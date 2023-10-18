@@ -1,29 +1,28 @@
-$(document).ready(function() {
-    $('#btnBayar').click(function() {
-        // Cek pilihan radiobutton dengan nama "langganan"
-        var selectedLangganan = $('input[name="langganan"]:checked').val();
+const submitProofButton = document.getElementById('submitProof');
+submitProofButton.disabled = true;
 
-        console.log(selectedLangganan);
-        if(selectedLangganan != undefined)
-            $('#modalSuccess').modal('show');
-        else 
-            $('#modalFailed').modal('show');
+const proofUploadInput = document.getElementById('proofUpload');
+const preview = document.getElementById('preview');
 
-    });
+proofUploadInput.addEventListener('change', function () {
+    const file = proofUploadInput.files[0];
+    if (file) {
+        const reader = new FileReader();
 
-    $('input[name="langganan"]').change(function() {
-        var selectedLangganan = $('input[name="langganan"]:checked').val();
-        if(selectedLangganan == 1){
-            $("[id=tipeLangganan]").text("Langganan 1 Bulan")
-            $("[id=jumlahBayar]").text("Rp. 15.000,-") 
-        }
-        else if(selectedLangganan == 2){
-            $("[id=tipeLangganan]").text("Langganan 3 Bulan")
-            $("[id=jumlahBayar]").text("Rp. 45.000,-") 
-        }
-        else if(selectedLangganan == 3){
-            $("[id=tipeLangganan]").text("Langganan 6 Bulan")
-            $("[id=jumlahBayar]").text("Rp. 60.000,-") 
-        }
-    });
+        reader.onload = function (e) {
+            preview.innerHTML = `<img src="${e.target.result}" alt="Preview" class="img-bank" style="max-width: 100px;">`;
+        };
+
+        reader.readAsDataURL(file);
+        submitProofButton.disabled = false;
+    } else {
+        preview.innerHTML = '';
+        submitProofButton.disabled = true;
+    }
+});
+
+submitProofButton.addEventListener('click', function () {
+    setTimeout(function () {
+        window.location.href = 'index.html#success';
+    }, 3000);
 });
