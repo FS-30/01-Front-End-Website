@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 showConfirmButton: false 
             }).then(() => {
                 localStorage.setItem('loggedInUsername', username);
-                window.location.href = '../homepage/home.html';
+                window.location.href = '../index.html';
             });
         } else {
             Toast.fire({

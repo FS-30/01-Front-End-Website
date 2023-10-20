@@ -245,7 +245,7 @@ p{
 }
 
 .bottom-section {
-    background-image: url('../img/bg-bottoms.png');
+    background-image: url('../../../homepage/assets/img/bg-bottoms.png');
     background-size: cover;
     background-position: center;
     margin-top: 200px;
@@ -257,7 +257,7 @@ p{
 }
 
 .full-width-bg {
-    background-image: url('../img/librarys.png'); 
+    background-image: url('../../../homepage/assets/img/librarys.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

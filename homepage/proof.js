@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('paymentSuccess', 'true');
 
         setTimeout(function () {
-            window.location.href = 'home.html#success';
+            window.location.href = '../index.html#success';
         }, 3000);
     });
 });
