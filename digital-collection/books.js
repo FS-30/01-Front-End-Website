@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const paymentSuccess = localStorage.getItem('paymentSuccess');
+
     fetch("books.json")
     .then(response => response.json())
     .then(data => {
@@ -14,8 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
             box.id = book.type;
             
             if (book.price === "SUBSCRIBE NEEDED") {
-                box.style.border = "2px solid red";
-            }
+                    if (paymentSuccess === 'true') {
+                        box.style.border = "2px solid green"; 
+                        box.addEventListener("click", function () {
+                            const bookDetailsUrl = `book_details.html?id=${book.id}`;
+                            window.location.href = bookDetailsUrl;
+                        });
+                    } else {
+                        box.style.border = "2px solid red"; 
+                        box.style.pointerEvents = "none"; 
+                    }
+                }
 
             box.innerHTML = `
                 <img src="${book.image}" alt="${book.title}">

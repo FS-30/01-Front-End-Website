@@ -77,6 +77,28 @@ body{
     border-bottom: 1px solid #D1D9E2;
 }
 
+.navigation-section {
+    font-family: "Poppins";
+    color: #000000;
+    font-weight: lighter;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.special-button{
+    font-family: "Poppins";
+    background-color: #FFA458;
+    border-radius:  35px;
+    margin-top: 10px;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    width: 120%;
+    text-align: center;
+}
+
 /* Category */
 .category-section {
     position: fixed;
@@ -418,6 +440,14 @@ p{
 @media (max-width: 768px) {
     body {
         background-image: none;
+    }
+
+    #loggedInUsername{
+        display: none;
+    }
+    
+    .special-button{
+        display: none;
     }
 
     .navbar-nav {

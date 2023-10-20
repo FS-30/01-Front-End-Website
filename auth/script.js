@@ -114,13 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const userData = JSON.parse(localStorage.getItem('userData'));
         if (userData && userData.username === username && userData.password === password) {
+            
             Toast.fire({
                 icon: 'success',
                 title: 'Login Successful',
                 timer: 1500, 
                 showConfirmButton: false 
             }).then(() => {
-                window.location.href = '../homepage/index.html';
+                localStorage.setItem('loggedInUsername', username);
+                window.location.href = '../homepage/home.html';
             });
         } else {
             Toast.fire({

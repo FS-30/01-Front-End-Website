@@ -28,8 +28,16 @@
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <span id="user-greeting"></span>
-                            <a id="logout-button" class="nav-link">Log Out</a>
+                            <a class="nav-link navigation" id="registerButton" href="../auth/register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation special-button" id="loginButton" href="../auth/login.html">Login</a>
+                        </li>
+                        <li class="nav-item" id="loggedInSection" style="display: none;">
+                            <span class="nav-link navigation-section" id="loggedInUsername"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation special-button" id="logoutButton" href="../auth/login.html" >Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -94,8 +102,9 @@
                         Support our mission to spread knowledge and empower minds by subscribing to our platform <br> and enjoy unlimited access to a wealth of books and educational resources
                     </p>
                     <div class="pt-5">
-                        <a href="payment.html" class="btn button-orange text-white">SUBSCRIBE</a>
+                        <a href="payment.html" class="btn button-orange text-white" id="subscribe">SUBSCRIBE</a>
                     </div>
+                    <p class="mt-3" style="font-size: 10px;">Make sure you already logged in.</p>
                 </div>
             </div>
         </div>
@@ -124,9 +133,7 @@
         </div>
 
         <script>
-            // Check for the hash parameter indicating success
             if (window.location.hash === "#success") {
-                // Show SweetAlert with the "Payment Success" message
                 swal("Payment Success", "", "success");
             }
         </script>
