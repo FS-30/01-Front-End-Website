@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400');
 
 /* Navbar */
+body{
+    background-image: url('https://c.animaapp.com/ME8XcaOo/img/2111-w039-n003-6b-p1-1.png');
+}
+
+#sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .logo {
     max-width: 50px;
 }
@@ -51,33 +62,6 @@
 
 .nav-item {
     margin-right: 20px;
-}
-
-.login{
-    font-family: "Poppins";
-    background-color: #FFA458;
-    border-radius:  35px;
-    padding: 8px 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.login:hover{
-    color: white;
-}
-
-.register{
-    font-family: "Poppins";
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.register:hover, .navigation:hover{
-    color: #ef7919;
 }
 
 .active {
@@ -238,7 +222,7 @@ a{
 .heading{
     text-align: center;
     position: relative;
-    margin: 150px 0px 0px 0px;
+    margin: 180px 0px 0px 0px;
     padding: 1rem 0;
     padding-bottom: 3rem;
     padding-left: 130px;
@@ -269,7 +253,7 @@ a{
 }
 
 .btn:hover{
-    background-color: orangered;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     border: .1rem solid #fff;
 }
@@ -309,7 +293,7 @@ a{
     outline: .0rem solid rgba(0, 0, 0, .1);
     outline-offset: -1rem;
     text-align: center;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     transition: .2s linear;
     cursor: pointer;
 }
@@ -317,7 +301,7 @@ a{
 .product .product-slider .box:hover {
     outline-offset: 0rem;
     outline: .1rem solid #000;
-    background-color: #ffa257;
+    background-color: #ffa76c4a;
 }
 
 .product .product-slider .box img {
@@ -401,6 +385,17 @@ a{
     text-align: left;
 }
 
+.more-ebooks {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #FFA458;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    margin: 0 0 100px 130px;
+}
+
 p{
     font-family: "Inter-Regular", Helvetica;
     font-size: 16px;
@@ -416,5 +411,125 @@ p{
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 10px 0 0;
+    }
+
+    #sticky-navbar {
+        padding: 0px 0;
+    }
+
+    .category-section {
+        top: 25%;
+        left: -10px;
+        transform: translateX(0);
+    }
+
+    .category-section ul {
+        padding: 10px;
+    }
+
+    .toggle-button {
+        left: 265px;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .heading {
+        margin-top: 200px;
+        margin-left: -10px;
+        padding-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .product{
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    .product-slider {
+        margin: 0 0 20px 0;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr; 
+    }
+
+    .product .product-slider .box {
+        margin: 0 0 0 0;
+    }
+
+    .product .product-slider .box img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .product .product-slider .box h3 {
+        padding: 0.5rem 0;
+        border-radius: 0;
+        text-align: left;
+    }
+
+    .product .product-slider .box .description {
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-body li a:active::after #E-Book {
+        background: transparent;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .footer .col.text-left.text-white {
+        text-align: center;
+    }
+
+    .mb-5{
+        text-align: center;
+    }
+
+    .social-media-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-fluid{
+        display: none;
+    }
+
+    .more-ebooks {
+        font-size: 15px;
+        margin-right: 100px;
     }
 }

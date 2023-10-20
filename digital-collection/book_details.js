@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById("book-title").textContent = book.title;
                     document.getElementById("book-author").textContent = `Author: ${book.author}`;
                     document.getElementById("book-price").textContent = `Price: ${book.price}`;
-                    document.getElementById("book-description").textContent = book.contents;
+                    document.getElementById("book.contents").textContent = book.contents;
                     document.getElementById("book-image").src = book.image;
 
                     const bookType = book.type;
                     const speakButton = document.getElementById("speak-button");
 
                     if (bookType === "Audio-Book") {
-                        const bookDescription = document.getElementById("book-description");
+                        const bookDescription = document.getElementById("book.contents");
                         speakButton.style.display = "block";
 
                         const speechSynthesis = window.speechSynthesis;

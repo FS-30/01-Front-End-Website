@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const box = document.createElement("div");
             box.className = "box";
             box.id = book.type;
+            
+            if (book.price === "SUBSCRIBE NEEDED") {
+                box.style.border = "2px solid red";
+            }
+
             box.innerHTML = `
                 <img src="${book.image}" alt="${book.title}">
                 ${book.type === "Audio-Book" ? `<img src="${book.icon}" class="lock-icon" alt="Audio Book" style="width: 50px; height: 50px;">` : ''}
@@ -20,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="description">
                     <span>${book.description}</span>
                 </div>
-                <a href="#${book.id}" class="btn">Download</a>
+                <a href="#${book.id}" class="btn">Read</a>
             `;
             wrapper.appendChild(box);
 
