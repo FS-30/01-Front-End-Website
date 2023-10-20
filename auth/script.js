@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 timer: 1500, 
                 showConfirmButton: false 
             }).then(() => {
-                window.location.href = 'login.html';
+                window.location.href = '../homepage/index.html';
             });
         } else {
             Toast.fire({
